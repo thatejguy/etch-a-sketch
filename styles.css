@@ -21,10 +21,10 @@ body {
 }
 
 .grid {
-  width: 25px;
   height: 25px;
+  width: 25px;
   border: 1px solid black;
-  flex: 1 0 auto;
+  flex: 1 1 auto;
 }
 
 

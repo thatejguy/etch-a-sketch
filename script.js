@@ -2,7 +2,6 @@
 const container = document.querySelector('.container');
 
 //stuff
-const numOfDivs = 16;
 function createDivs(num) {
   for (let i = 0; i < num * num; i++) {
     let grid = document.createElement('div');
@@ -11,7 +10,7 @@ function createDivs(num) {
   }
 }
 
-createDivs(32)
+createDivs(16);
 
 
 
