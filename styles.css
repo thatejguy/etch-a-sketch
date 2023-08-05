@@ -10,22 +10,51 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+body {
+  background-color: #042c35;
 }
 
 .container {
-  border: 5px solid red;
   margin: 0 auto;
   width: 500px;
   height: 500px;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
+  background-color: #10aacc;
 }
 
 .grid {
   border: 1px solid black;
   flex: 1 0 auto;
 }
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+.titleContainer {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bolder;
+  font-style: italic;
+  color: #11c7ef;
+}
+
+
 
 
 
