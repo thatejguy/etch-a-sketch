@@ -40,7 +40,7 @@ body {
 }
 
 .titleContainer {
-  height: 25%;
+  height: 20%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

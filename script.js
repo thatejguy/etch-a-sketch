@@ -3,8 +3,7 @@ const container = document.querySelector('.container');
 const clearButton = document.querySelector('.clearButton');
 const gridButton = document.querySelector('.gridButton');
 
-let grid = document.createElement('div');
-//functions
+//creates a grid of variable divs
 function createDivs(num) {
   for (let i = 0; i < num * num; i++) {
     let grid = document.createElement('div');
@@ -21,15 +20,19 @@ function createDivs(num) {
   }
 }
 
+//prompts the user for a number
 function getSize() {
   gridButton.addEventListener('click', () => {
-    let number = prompt('please enter number', '');
-    createDivs(number);
+    let grid = document.querySelector('.grid')
+    for (let i = 0; i < num * num; i++) {
+      container.removeChild(grid)
+    }
+    let num = prompt('please enter number', '')
+    createDivs(num);
   })
 }
 
 //call functions
-createDivs(16);
 getSize();
 
 
