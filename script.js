@@ -11,7 +11,7 @@ function createDivs(num) {
   }
 }
 
-createDivs(16)
+createDivs(32)
 
 
 
