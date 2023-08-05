@@ -2,16 +2,16 @@
 const container = document.querySelector('.container');
 
 //stuff
-function makeGrid(rows, cols) {
-  container.style.setProperty('--grid-rows', rows);
-  container.style.setProperty('--grid-cols', cols);
-  for (let i = 0; i < rows * cols; i++) {
-    let div = document.createElement('div');
-    container.appendChild(div).className = 'grid-item';
+const numOfDivs = 16;
+function createDivs(num) {
+  for (let i = 0; i < num * num; i++) {
+    let grid = document.createElement('div');
+    grid.classList.add('grid');
+    container.appendChild(grid);
   }
 }
 
-makeGrid(16, 16);
+createDivs(16)
 
 
 
