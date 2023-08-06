@@ -34,7 +34,7 @@ function getSize() {
         alert('Your number must be 2 or greater.');
         num = '';
       } else {
-        console.log('Hello!')
+        console.log('You found me!')
       }
     }
     createDivs(num);
