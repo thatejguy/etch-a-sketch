@@ -23,10 +23,6 @@ function createDivs(num) {
 //prompts the user for a number
 function getSize() {
   gridButton.addEventListener('click', () => {
-    let grid = document.querySelector('.grid')
-    for (let i = 0; i < num * num; i++) {
-      container.removeChild(grid)
-    }
     let num = prompt('please enter number', '')
     createDivs(num);
   })
