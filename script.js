@@ -12,7 +12,7 @@ function createDivs(num) {
     grid.style.height = `${500 / num}px`;
     container.appendChild(grid);
     grid.addEventListener('mouseover', () => {
-      grid.style.backgroundColor = 'black';
+      grid.style.backgroundColor = randomColor();
     });
     clearButton.addEventListener('click', () => {
       grid.style.backgroundColor = '#10aacc'
@@ -42,6 +42,12 @@ function getSize() {
     }
     createDivs(num);
   })
+}
+
+//creates a random rgb value
+function randomColor() {
+  let o = Math.round, r = Math.random, s = 255;
+  return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
 }
 
 //call functions
