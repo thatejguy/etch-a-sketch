@@ -24,7 +24,19 @@ function createDivs(num) {
 function getSize() {
   gridButton.addEventListener('click', () => {
     container.innerHTML = ''
-    let num = prompt('please enter number', '')
+    let num = '';
+    while (num === '') {
+      num = prompt('Please enter the number you would like to change the grid size to: ', '');
+      if (num > 100) {
+        alert('Your number must be below 100.');
+        num = '';
+      } else if (num < 2) {
+        alert('Your number must be 2 or greater.');
+        num = '';
+      } else {
+        console.log('Hello!')
+      }
+    }
     createDivs(num);
   })
 }
