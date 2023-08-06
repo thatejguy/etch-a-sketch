@@ -33,8 +33,11 @@ function getSize() {
       } else if (num < 2) {
         alert('Your number must be 2 or greater.');
         num = '';
+      } else if (isNaN(num) === true) {
+        alert('You need to enter a number.');
+        num = '';
       } else {
-        console.log('You found me!')
+        console.log('Hello there!');
       }
     }
     createDivs(num);
