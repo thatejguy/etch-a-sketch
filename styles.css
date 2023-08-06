@@ -48,18 +48,33 @@ body {
 }
 
 .title {
-  font-size: 40px;
+  font-size: 56px;
   font-weight: bolder;
   font-style: italic;
   color: #11c7ef;
+  text-shadow: -1px 0 teal, 0 1px teal, 1px 0 white, 0 -1px white;
 }
 
 .clearButton {
   cursor: pointer;
+  padding: 8px;
+  background-color: #0062ff;
+  border: 2px solid teal;
+  color: #11e4ef;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: large;
 }
 
 .gridButton {
   cursor: pointer;
+  padding: 8px;
+  background-color: #0062ff;
+  border: 2px solid teal;
+  color: #11e4ef;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: large;
 }
 
 
