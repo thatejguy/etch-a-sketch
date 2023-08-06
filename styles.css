@@ -54,6 +54,10 @@ body {
   color: #11c7ef;
 }
 
+.clearButton {
+  cursor: pointer;
+}
+
 
 
 

@@ -23,12 +23,14 @@ function createDivs(num) {
 //prompts the user for a number
 function getSize() {
   gridButton.addEventListener('click', () => {
+    container.innerHTML = ''
     let num = prompt('please enter number', '')
     createDivs(num);
   })
 }
 
 //call functions
+createDivs(16);
 getSize();
 
 
